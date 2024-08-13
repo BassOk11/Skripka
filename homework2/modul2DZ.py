@@ -7,8 +7,8 @@ def count_calls():
 
 def string_info(string):
     count_calls()
-    tuple = (len(string), string.upper(), string.lower())
-    return tuple
+    tuple_ = (len(string), string.upper(), string.lower())
+    return tuple_
 
 
 print(string_info('Capybara'))
