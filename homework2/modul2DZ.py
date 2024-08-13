@@ -5,26 +5,26 @@ def count_calls():
     global calls
     calls += 1
 
-    def string_info(string):
-        global calls
-        calls += 1
-        print((len(string), string.upper(), string.lower()))
-
-    string = input('Строчка с вас: ')
-
-    string_info(string)
-
-    def is_contains():
-        global calls
-        calls += 1
-        list_ = []
-        string = input("Is contains: ")
-        list_.append(input("Is_contains: "))
-        print(string in list_)
-
-        print(calls)
-
-    is_contains()
+def string_info(string):
+    count_calls()
+    tuple = (len(string), string.upper(), string.lower())
+    return tuple
 
 
-count_calls()
+print(string_info('Capybara'))
+print(string_info('Armageddon'))
+
+
+
+def is_contains(string_, list_,):
+    count_calls()
+
+    string_ = string_.lower()
+    list_ = [item.lower() for item in list_]
+    return string_ in list_
+
+
+print(is_contains('Urban', ['ban', 'BaNaN', 'urBAN']))
+print(is_contains('cycle', ['recycling', 'cyclic']))
+
+print(calls)
