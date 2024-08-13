@@ -15,12 +15,12 @@ def count_calls():
         global calls
         calls += 1
         list_ = []
-        string = input("Введите вопрос: ")
-        list_.append(input("Ответ: "))
+        string = input("Is contains: ")
+        list_.append(input("Is_contains: "))
         for i in range(len(list_)):
             for j in range(len(string)):
-                if i == j:
-                    print((string, list_))
+                print(i == j)
+
         print(calls)
 
 
